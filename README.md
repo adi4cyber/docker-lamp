@@ -50,7 +50,7 @@ To complicate things even further I needed an image, or actually two, that would
 Designed to be a single interface that just 'gets out of your way', and works on 18.04 and 20.04 with php 7 and 8. You can move between all images without changing how you work with Docker.
 
 ## Image Versions
-> **NOTE:** [PHP 5.6 is end of life][end-of-life], so the PHP 5 images `mattrayner/lamp:latest-1404-php5` and `mattrayner/lamp:latest-1604-php5` will not receive any updates. Although these images will stay on Docker Hub, we **strongly** recommend updating you applications to PHP 7 or PHP 8.
+> **NOTE:** [PHP 5.6 is end of life][end-of-life], so the PHP 5 images `adiprayitno/lamp:latest-1404-php5` and `adiprayitno/lamp:latest-1604-php5` will not receive any updates. Although these images will stay on Docker Hub, we **strongly** recommend updating you applications to PHP 7 or PHP 8.
 
 > **NOTE**: The 14.04 and 16.04 variants of this image are no longer being actively supported or updated.
 
@@ -69,27 +69,27 @@ Component | `latest-1404` | `latest-1604` | `latest-1804-php7` `latest-1804-php8
 This is the quickest way
 ```bash
 # Launch a 20.04 based image with PHP 8
-docker run -p "80:80" -v ${PWD}/app:/app mattrayner/lamp:latest-2004-php8
+docker run -p "80:80" -v ${PWD}/app:/app adiprayitno/lamp:latest-2004-php8
 
 # Launch a 20.04 based image with PHP 7
-docker run -p "80:80" -v ${PWD}/app:/app mattrayner/lamp:latest-2004-php7
+docker run -p "80:80" -v ${PWD}/app:/app adiprayitno/lamp:latest-2004-php7
 
 # Launch a 18.04 based image with PHP 8
-docker run -p "80:80" -v ${PWD}/app:/app mattrayner/lamp:latest-1804-php8
+docker run -p "80:80" -v ${PWD}/app:/app adiprayitno/lamp:latest-1804-php8
 
 # Launch a 18.04 based image with PHP 7
-docker run -p "80:80" -v ${PWD}/app:/app mattrayner/lamp:latest-1804-php7
+docker run -p "80:80" -v ${PWD}/app:/app adiprayitno/lamp:latest-1804-php7
 
 # Launch a 16.04 based image with PHP 7
-docker run -p "80:80" -v ${PWD}/app:/app mattrayner/lamp:latest-1604
+docker run -p "80:80" -v ${PWD}/app:/app adiprayitno/lamp:latest-1604
 
 # Launch a 14.04 based image with PHP 5
-docker run -p "80:80" -v ${PWD}/app:/app mattrayner/lamp:latest-1404
+docker run -p "80:80" -v ${PWD}/app:/app adiprayitno/lamp:latest-1404
 ```
 
 ### With a Dockerfile
 ```docker
-FROM mattrayner/lamp:latest-2004-php8
+FROM adiprayitno/lamp:latest-2004-php8
 
 # Your custom commands
 
