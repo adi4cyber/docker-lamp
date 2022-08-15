@@ -2,6 +2,7 @@
 Docker-LAMP is a set of docker images that include the phusion baseimage (18.04 and 20.04 varieties), along with a LAMP stack ([Apache][apache], [MySQL][mysql] and [PHP][php]) all in one handy package.
 
 With Ubuntu **20.04** and **18.04** images on the `latest-2004` and `latest-1804` tags, Docker-LAMP is flexible enough to use with all of your LAMP projects.
+Added Wordpress Latest /web
 
 [![Build Status][shield-build-status]][info-build-status]
 [![Docker Hub][shield-docker-hub]][info-docker-hub]
